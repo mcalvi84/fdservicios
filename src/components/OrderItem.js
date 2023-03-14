@@ -1,11 +1,11 @@
-import React from "react"
-import { StyleSheet, Text, View, TouchableOpacity } from "react-native"
-import Ionicons from "@expo/vector-icons/Ionicons"
+import React from "react";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import Ionicons from "@expo/vector-icons/Ionicons";
 
-const formatDay = time => {
-  const date = new Date(time)
-  return date.toLocaleDateString()
-}
+const formatDay = (time) => {
+  const date = new Date(time);
+  return date.toLocaleDateString();
+};
 
 const OrderItem = ({ item, onDelete }) => {
   return (
@@ -20,10 +20,10 @@ const OrderItem = ({ item, onDelete }) => {
         </TouchableOpacity>
       </View>
     </View>
-  )
-}
+  );
+};
 
-export default OrderItem
+export default OrderItem;
 
 const styles = StyleSheet.create({
   order: {
@@ -42,4 +42,4 @@ const styles = StyleSheet.create({
   total: {
     fontSize: 18,
   },
-})
+});

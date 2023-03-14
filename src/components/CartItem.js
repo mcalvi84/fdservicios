@@ -1,6 +1,6 @@
-import React from "react"
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native"
-import Ionicons from "@expo/vector-icons/Ionicons"
+import React from "react";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import Ionicons from "@expo/vector-icons/Ionicons";
 
 const CartItem = ({ item, onDelete }) => {
   return (
@@ -18,10 +18,10 @@ const CartItem = ({ item, onDelete }) => {
         </TouchableOpacity>
       </View>
     </View>
-  )
-}
+  );
+};
 
-export default CartItem
+export default CartItem;
 
 const styles = StyleSheet.create({
   item: {
@@ -40,4 +40,4 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
   },
-})
+});

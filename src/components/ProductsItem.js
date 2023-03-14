@@ -1,5 +1,5 @@
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native"
-import React from "react"
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import React from "react";
 
 const ProductsItem = ({ item, onSelected }) => {
   return (
@@ -11,7 +11,7 @@ const ProductsItem = ({ item, onSelected }) => {
         <Image
           style={styles.image}
           source={{
-            uri: "https://reactnative.dev/img/tiny_logo.png",
+            uri: "https://i.postimg.cc/wjtwGf9S/logoFD.jpg",
           }}
         />
       </View>
@@ -21,16 +21,16 @@ const ProductsItem = ({ item, onSelected }) => {
         <Text>${item.price}</Text>
       </View>
     </TouchableOpacity>
-  )
-}
+  );
+};
 
-export default ProductsItem
+export default ProductsItem;
 
 const styles = StyleSheet.create({
   itemContainer: {
     flex: 1,
     borderRadius: 10,
-    padding: 20,
+    padding: 50,
     shadowColor: "black",
     shadowOpacity: 0.5,
     shadowOffset: { width: 0, height: 2 },
@@ -38,13 +38,14 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   imageContainer: {
-    height: "60%",
+    height: "35%",
   },
   textContainer: {
-    height: "40%",
+    height: "55%",
   },
   image: {
     height: "100%",
-    width: "100%",
+    width: "30%",
+    alignContent: "center",
   },
-})
+});

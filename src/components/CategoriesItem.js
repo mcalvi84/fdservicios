@@ -1,5 +1,5 @@
-import { StyleSheet, Text, TouchableOpacity, View, Image } from "react-native"
-import React from "react"
+import { StyleSheet, Text, TouchableOpacity, View, Image } from "react-native";
+import React from "react";
 
 const CategoriesItem = ({ item, onSelected }) => {
   return (
@@ -23,10 +23,10 @@ const CategoriesItem = ({ item, onSelected }) => {
         </View>
       </TouchableOpacity>
     </View>
-  )
-}
+  );
+};
 
-export default CategoriesItem
+export default CategoriesItem;
 
 const styles = StyleSheet.create({
   categoriesItem: {
@@ -61,4 +61,4 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 10,
     borderBottomRightRadius: 10,
   },
-})
+});
